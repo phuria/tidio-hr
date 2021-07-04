@@ -12,8 +12,8 @@ class SalaryBonusType
     public static function getChoices(): array
     {
         return [
-            self::FIXED => 'Fixed',
-            self::PERCENTAGE => 'Percentage',
+            self::FIXED => 'Fixed bonus per year',
+            self::PERCENTAGE => 'Percentage bonus',
         ];
     }
 
