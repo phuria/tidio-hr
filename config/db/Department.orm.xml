@@ -1,0 +1,13 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                          https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+    <entity name="App\Model\Department" table="department">
+        <id name="id" type="integer">
+            <generator/>
+        </id>
+        <field name="name"/>
+        <field name="shortCode" unique="true"/>
+        <embedded name="salaryBonus" class="App\Model\SalaryBonus"/>
+    </entity>
+</doctrine-mapping>
